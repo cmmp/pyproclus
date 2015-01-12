@@ -2,13 +2,14 @@ import proclus as prc
 import plotter
 import arffreader as ar
 import numpy as np
+import adjrand
 
 X, sup = ar.readarff("data/simple.arff")
 
 Dims = [0,1]
-plotter.plotDataset(X, D = Dims) # plot 0-1 dimensions
+# plotter.plotDataset(X, D = Dims) # plot 0-1 dimensions
 
-R = 0 # toggle run proclus
+R = 1 # toggle run proclus
 RS = 0 # toggle use random seed
 
 if R: # run proclus

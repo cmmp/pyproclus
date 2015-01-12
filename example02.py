@@ -2,11 +2,12 @@ import proclus as prc
 import plotter
 import arffreader as ar
 import numpy as np
+import adjrand
 
 X, sup = ar.readarff("data/highdataproclus.arff")
 
 Dims = [1,2]
-plotter.plotDataset(X, D = Dims)
+# plotter.plotDataset(X, D = Dims)
 
 R = 1 # toggle run proclus
 RS = 0 # toggle use random seed
